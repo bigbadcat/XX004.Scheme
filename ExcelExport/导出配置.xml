@@ -2,8 +2,8 @@
 <ExportConfig>
   <Config>
     <SourceFolder Value="..\数值" />
-	<ExportFolderClientLua Value="..\..\XX004.Unity\Assets\ResourcesEx\Lua\Data" />
-	<ExportFolderDocument Value="..\..\XX004.Unity\Assets\ResourcesEx\Lua\Doc" />
+	<ExportFolderClientLua Value="client" />
+	<ExportFolderDocument Value="doc" />
     <ExportFolderServerLua Value="server" />
     <ExportFolderServerCPP Value="cpp" />
   </Config>

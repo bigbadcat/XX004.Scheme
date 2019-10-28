@@ -1,5 +1,11 @@
-﻿::将下面路径替换成服务器的配置路径 ..........\Lua\Config
-::copy .\server\*.lua E:\GitHub\XX004.Server\bin\Lua\Config
+﻿::将下面路径替换成客户端的配置路径 Assets\ResourcesEx\Lua\Data
+copy .\client\*.lua E:\GitHub\XX004.Client\XX004.Unity\Assets\ResourcesEx\Lua\Data
+
+::将下面路径替换成客户端的语言配置路径 Assets\ResourcesEx\Lua\Doc
+copy .\doc\*.lua E:\GitHub\XX004.Client\XX004.Unity\Assets\ResourcesEx\Lua\Doc
+
+::将下面路径替换成服务器的配置路径 ..........\Lua\Config
+copy .\server\*.lua E:\GitHub\XX004.Server\bin\Lua\Config
 
 ::将下面路径替换成服务器的配置代码路径 ..........\Common\Config\LuaWrap
-::copy .\cpp\*.* E:\GitHub\XX004.Server\XX004\Common\Config\LuaWrap
+copy .\cpp\*.* E:\GitHub\XX004.Server\XX004\Common\Config\LuaWrap
