@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TypeDefine>  
+	<Enum Name="AttrType" Note="属性类型">
+		<Item Name="Unknown" Value="0" Note="未知属性" />
+		<Item Name="MaxHP" Value="1" Note="生命" />
+		<Item Name="Attack" Value="2" Note="攻击" />
+		<Item Name="Defense" Value="3" Note="防御" />
+		<Item Name="MaxEnergy" Value="4" Note="能量" />
+		<Item Name="MaxStability" Value="5" Note="定力" />
+		<Item Name="CritProb" Value="6" Note="暴击率" />
+		<Item Name="CritDamge" Value="7" Note="暴击伤害" />
+		<Item Name="AntiCritProb" Value="8" Note="韧性" />
+		<Item Name="AntiCritDamge" Value="9" Note="暴击减伤" />
+		<Item Name="HPRecover" Value="10" Note="生命恢复" />
+		<Item Name="EnergyRecover" Value="11" Note="能量恢复" />
+		<Item Name="StabilityRecover" Value="12" Note="定力恢复" />
+		<Item Name="HPSuckUp" Value="13" Note="吸血" />
+		<Item Name="Max" Value="14" Note="最大值" />
+	</Enum>
+  
+	<Enum Name="RunTimeAttrType" Note="运行时属性类型">
+		<Item Name="Unknown" Value="0" Note="未知属性" />
+		<Item Name="HP" Value="1" Note="生命" />
+		<Item Name="Energy" Value="2" Note="能量" />
+		<Item Name="Stability" Value="3" Note="定力" />
+		<Item Name="Max" Value="4" Note="最大值" />
+	</Enum>
+	
+	<Enum Name="HookAnchorType" Note="挂接点类型">
+		<Item Name="Scene" Value="0" Note="场景" />
+		<Item Name="Common" Value="1" Note="通用" />
+		<Item Name="HitPoint" Value="2" Note="受击" />
+		<Item Name="TopInfo" Value="3" Note="顶部信息" />
+		<Item Name="Head" Value="4" Note="头部" />
+		<Item Name="Back" Value="5" Note="背部" />
+		<Item Name="HandLeft" Value="6" Note="左手" />
+		<Item Name="HandRight" Value="7" Note="右手" />
+		<Item Name="FootLeft" Value="8" Note="左脚" />
+		<Item Name="FootRight" Value="9" Note="右脚" />
+	</Enum>
+</TypeDefine>

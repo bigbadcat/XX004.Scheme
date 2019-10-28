@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TypeDefine>
+	<Enum Name="SkillEffectType" Note="技能作用类型">
+		<Item Name="Unknown" Value="0" Note="未知属性" />
+		<Item Name="Hurt" Value="1" Note="伤害" />
+		<Item Name="Cure" Value="2" Note="治疗" />
+		<Item Name="Buff" Value="3" Note="Buff" />
+	</Enum>
+
+	<Class Name="SkillEffect" Note="技能作用">
+		<Field CName="类型" VName="Type" Type="SkillEffectType" />
+		<Field CName="编号" VName="Code" Type="int" />
+		<Field CName="敌对" VName="IsEnemy" Type="bool" />
+	</Class>
+	
+	<Class Name="SkillInfo" Note="技能信息">
+		<Field CName="编号" VName="Code" Type="int" />
+		<Field CName="名称" VName="Name" Type="string" />
+		<Field CName="介绍" VName="Note" Type="string" />
+		<Field CName="槽位" VName="Slot" Type="int" />
+		<Field CName="后续技能" VName="Next" Type="int" />
+		<Field CName="动画" VName="AniName" Type="string" />
+		<Field CName="时长" VName="Duration" Type="float" />
+		<Field CName="原型" VName="Prefab" Type="string" />
+		<Field CName="优先级" VName="Priority" Type="int" />
+		<Field CName="霸体" VName="SuperArmor" Type="bool" />
+		<Field CName="冷却" VName="CDTime" Type="float" />
+		<Field CName="消耗类型" VName="CastType" Type="RunTimeAttrType" />
+		<Field CName="消耗值" VName="CastValue" Type="int" />
+		<Field CName="定力伤害" VName="StabilityDamage" Type="int" />
+		<Field CName="作用" VName="Effects" Type="SkillEffect" IsArray="true" />
+	</Class>
+	
+	<Class Name="SkillFormulaInfo" Note="技能公式">
+		<Field CName="编号" VName="Code" Type="int" />
+		<Field CName="固定基础" VName="FixedBasic" Type="int" />
+		<Field CName="固定增量" VName="FixedIncrement" Type="int" />
+		<Field CName="引用1属性类型" VName="Refer1AttrType" Type="AttrType" />
+		<Field CName="引用1基础" VName="Refer1Basic" Type="int" />
+		<Field CName="引用1增量" VName="Refer1Increment" Type="int" />
+		<Field CName="引用2属性类型" VName="Refer2AttrType" Type="AttrType" />
+		<Field CName="引用2基础" VName="Refer2Basic" Type="int" />
+		<Field CName="引用2增量" VName="Refer2Increment" Type="int" />
+		<Field CName="引用3属性类型" VName="Refer3RunTimeAttrType" Type="RunTimeAttrType" />
+		<Field CName="引用3基础" VName="Refer3Basic" Type="int" />
+		<Field CName="引用3增量" VName="Refer3Increment" Type="int" />
+	</Class>
+</TypeDefine>

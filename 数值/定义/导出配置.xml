@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExportConfig>
+	<Config>
+		<SourceFolder Value="..\表格" />
+		<ExportFolder Value="..\..\..\XX004.Unity\Assets\Resources\Config" />
+		<BuildNameSpace Value="XX004.Config" />
+		<BuildPath Value="..\..\..\XX004.Unity\Assets\Scripts\Config\ConfigDefine.cs" />
+	</Config>
+	<DefineFiles>
+		<File Name="Common.xml" />
+		<File Name="Character.xml" />
+		<File Name="Skill.xml" />
+		<File Name="Other.xml" />
+	</DefineFiles>
+	<ExportGroups>
+		<ExportGroup Name="角色">
+			<Export Name="信息" SourceName="角色.xlsx" ExportName="CharacterConfig.bytes" ClassDefine="CharacterInfo" Sheets="Character" />
+		</ExportGroup>
+		<ExportGroup Name="技能">
+			<Export Name="信息" SourceName="技能.xlsx" ExportName="SkillConfig.bytes" ClassDefine="SkillInfo" Sheets="Skill" />
+			<Export Name="公式" SourceName="技能公式.xlsx" ExportName="SkillFormulaConfig.bytes" ClassDefine="SkillFormulaInfo" Sheets="SkillFormula" />
+		</ExportGroup>
+		<ExportGroup Name="其它">
+			<Export Name="界面" SourceName="界面.xlsx" ExportName="UIConfig.bytes" ClassDefine="UIInfo" Sheets="UI" />
+		</ExportGroup>
+	</ExportGroups>
+</ExportConfig>

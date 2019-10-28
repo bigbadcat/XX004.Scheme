@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TypeDefine>
+	<Enum Name="CharacterType" Note="角色类型">
+		<Item Name="Unknown" Value="0" Note="未知" />
+		<Item Name="Player" Value="1" Note="玩家" />
+		<Item Name="Partner" Value="2" Note="伙伴" />
+		<Item Name="Monster" Value="3" Note="怪物" />
+		<Item Name="Elite" Value="4" Note="精英" />
+		<Item Name="Boss" Value="5" Note="Boss" />
+		<Item Name="NPC" Value="6" Note="NPC" />
+		<Item Name="Max" Value="7" Note="最大值" />
+	</Enum>
+	
+	<Class Name="AttrValue" Note="属性类型和对应值" IsSimple="true">
+		<Field CName="属性" VName="Attr" Type="AttrType" />
+		<Field CName="值" VName="Value" Type="int" />
+	</Class>
+
+	<Class Name="BuffRate" Note="Buff和对应触发概率" IsSimple="true">
+		<Field CName="编号" VName="Code" Type="int" />
+		<Field CName="概率" VName="Rate" Type="int" />
+	</Class>
+  
+	<Class Name="CharacterInfo" Note="角色信息">
+		<Field CName="编号" VName="Code" Type="int" />
+		<Field CName="名称" VName="Name" Type="string" />
+		<Field CName="介绍" VName="Note" Type="string" />
+		<Field CName="原型" VName="Prefab" Type="string" />
+		<Field CName="类型" VName="Type" Type="CharacterType" />
+		<Field CName="生命" VName="MaxHP" Type="int" />
+		<Field CName="攻击" VName="Attack" Type="int" />
+		<Field CName="防御" VName="Defense" Type="int" />
+		<Field CName="额外属性" VName="AdditionalAttr" Type="AttrValue" IsArray="true" />
+	</Class>  
+</TypeDefine>
